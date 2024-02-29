@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinâmicas</title>
+</head>
+<body>
+    <h1>podemos ajustar o tamanho da imagem que ira aparecer para o usuario de acordo com dispositivo que ele estiver acesando o site.</h1>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/P.png">
+        <source media="(max-width:1050px )" srcset="imagens/M.png">
+        <img src="imagens/G.png" alt="imagem flexivel">
+    </picture>
+    <h2> adicionando audio</h2>
+
+    <audio preload="metadata" autoplay controls >
+        <source src="happy-mistake.mp3" type="audio/mp3">
+
+    </audio>
+
+    <h1>inserindo videos hospedados localmentes</h1>
+    <video width="500" controls >
+
+        <source src="pexels-ilia-devaltovskii-20072084 (1440p).mp4" type="video/mp4">
+
+
+    </video>
+
+    <h1>inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_7mJDIFYe0o?si=VTKNdcXoNfO_vlvD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
